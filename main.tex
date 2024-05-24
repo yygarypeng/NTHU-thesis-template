@@ -1,0 +1,54 @@
+\documentclass[master]{NTHUthesis}
+
+%%% Customization  %%%
+\usepackage{zhlipsum, lipsum} % dummy text
+\graphicspath{{figures/}} % include images path
+
+%%% Necessary %%%
+\titleZH{論文標題論文標題論文標題論文標題論文標題論文標題論文標題論文標題}
+\titleEN{This is an English title. This is an English title. This is an English title}
+\instituteZH{物理學系物理組}
+\studentID{112022502}
+\studentZH{彭元彥}
+\studentEN{Yuan-Yen Peng}
+\advisorZH{徐百嫻}
+\advisorEN{Pai-hsien Jennifer Hsu}
+\yearZH{114}
+\monthZH{6}
+\yearEN{2025}
+\monthEN{June}
+
+\begin{document}
+
+\makecover
+
+\pagenumbering{Roman}
+
+\input{chapters/0-abstract}
+\input{chapters/1-acknowledgment}
+
+%%% Necessary %%%
+\maketoc
+
+%%% Optional %%%
+\phantomsection
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\clearpage
+
+\pagenumbering{arabic}
+
+%%% Main chapters %%%
+\input{chapters/2-introduction}
+\input{chapters/3-section}
+\input{chapters/4-methodology}
+\input{chapters/5-related_works}
+
+%%% Appendices %%%
+\input{chapters/A-appendices}
+
+%%% References %%%
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
